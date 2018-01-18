@@ -1,9 +1,17 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="scripts/html5shiv-printshiv.js"></script>
+        <![endif]-->
+
   <title>Instant Database Update</title>
 </head>
 
@@ -11,41 +19,51 @@
   <header>
     <h1>Instant Database Update</h1>
   </header>
-  <nav>
-    <div>
+
+  <nav class="navigation">
+    <div class="select_users">
       <h2><a href="#">Logged-in user's name</a></h2>
     </div>
-    <ul>
+
+    <div class="profile logged_out"></div>
+    <div class="admin_button"></div>
+
+    <ul class="users_menu">
       <li><a href="#">List of other users</a></li>
       <li><a href="#">List of other users</a></li>
       <li><a href="#">List of other users</a></li>
     </ul>
-    <ul>
+    <ul class="admin_menu">
       <li><a href="#">Manage users</a></li>
       <li><a href="#">Manage movies</a></li>
     </ul>
+    <div class='trash'></div>
   </nav>
-  <nav>
-    <h2>Favorites</h2>
-    <ul>
-      <li><a href="#">Movie Title</a></li>
+
+  <nav class="favs_list">
+    <h2>Favourites</h2>
+    <ul class="favs">
       <li><a href="#">Movie Title</a></li>
       <li><a href="#">Movie Title</a></li>
       <li><a href="#">Movie Title</a></li>
     </ul>
   </nav>
 
-  <section>
-    Large movie image
+  <section class="movie_single">
+    <a href="#"><img class="movie_player" alt="Movie title" src="images-movies/movie.png"></a>
     <h3>Movie title</h3>
-    <div><p>Add to/delete from favorites</p></div>
-    <p>Description</p>
-    
+    <div class="actions">
+      <div class="add_remove">
+        <p>Add to/remove from favourites</p>
+      </div>
+    </div>
+    <p class="description">Description </p>
   </section>
-  
+
   <footer>
-  <p>Instant Database Update Project by MZ 2018</p>
+    <p>Instant Database Update Project by MZ 2018</p>
   </footer>
+
 </body>
 
 </html>

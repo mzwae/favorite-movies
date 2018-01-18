@@ -33,8 +33,8 @@ header h1 {
   color: #A32824;
 }
 
-ul.users,
-ul.admin {
+ul.users_menu,
+ul.admin_menu {
   position: absolute;
   right: 0;
   border-left: 1px solid gray;
@@ -42,7 +42,7 @@ ul.admin {
   background-color: #F1F1F1;
 }
 
-ul.users {
+ul.users_menu {
   width: 200px;
   /*  display: none;*/
 }
@@ -50,26 +50,26 @@ ul.users {
 
 
 
-ul.admin {
+ul.admin_menu {
   width: 150px;
   display: none;
 }
 
-ul.users a,
-ul.admin a {
+ul.users_menu a,
+ul.admin_menu a {
   text-decoration: none;
   color: black;
 }
 
-.users li a,
-.admin li a {
+.users_menu li a,
+.admin_menu li a {
   font-size: 0.75em;
   padding: 5px;
   display: block;
 }
 
-.users li a:hover,
-.admin li a:hover {
+.users_menu li a:hover,
+.admin_menu li a:hover {
   background-color: #A32824;
   color: white;
 }
@@ -159,6 +159,9 @@ ul.favs li a:hover {
   height: 100px;
 }
 
+.movie_list figure a{
+  text-decoration: none;
+}
 .movie_list figcaption {
   display: inline-block;
   vertical-align: top;
@@ -172,9 +175,61 @@ ul.favs li a:hover {
   padding-right: 10px;
 }
 
+.movie_player{
+  width: 608px;
+  height: 344px;
+}
+
+.movie_single h3{
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+.movie_single p{
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+.movie_single .description {
+  font-size: 0.75em;
+  min-height: 80px;
+  text-align: justify;
+}
+
+.actions{
+  position: relative;
+  height: 37px;
+  border-bottom: 1px solid #ccc;
+}
+
+.actions .add_remove{
+  position: absolute;
+  right: 10px;
+}
+
+.actions .add_remove p{
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #999;
+}
+
+.actions .add_remove p:hover{
+  color: black;
+  border-bottom: 3px solid #993300;
+}
+
 footer {
   clear: both;
   height: 60px;
-  border: 1px solid green;
+  border-bottom: 1px dotted gray;
+  border-top: 1px dotted gray;
   margin-top: 30px;
+}
+
+footer p{
+  line-height: 60px;
+  margin-left: 50px;
+  font-size: 0.7em;
+  font-weight: bold;
+  
 }
